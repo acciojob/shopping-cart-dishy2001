@@ -8,8 +8,36 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+	<h1 id="heading">
+		Shopping List Calculator
+	</h1>
+    	<br/>
+		
+           <form id="myinputs">
+               <label>Name: </label>
+               <input type="text" id="item-name-input" placeholder="Name">
+               <!-- <td><input type="text" id="item-qty-input" placeholder="Qty"></td> -->
+               <label>Price: </label>
+               <input type="number" id="item-price-input" placeholder="Price">
+                
+           </form>
+           <br/>
+	
+           <button type="submit" id="subm">Submit</button>
+            
+	<table id="table1" style="text-align: left;">
+        	<tr id="entry">
+		    	<th style="padding-right: 20px;"><h2>Item Name</h2></th>
+            
+			<th><h2>Price</h2></th>
+		</tr>
+        
+        	<tr>
+            		<td style="padding-right: 20px;"><h3>Grand Total</h3></td>
+            		<td id="total" >$ 0</td>
+        	</tr>
+    	</table>
+    	<script type="text/javascript" src="./script.js"></script>
 
 </body>
 
