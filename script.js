@@ -1,7 +1,7 @@
 //your code here
 let grandtotal = 0;
 // let itemArr = [];
-function add(){
+function addItem(){
   let itemName = document.getElementById('item-name-input').value;
   let price = document.getElementById('item-price-input').value;
   if (!itemName) {
