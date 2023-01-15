@@ -9,27 +9,27 @@
 <body>
 	<!-- the entire body must be written by student -->
 	<header id="heading">
-		Shopping List Calculator
+		<h1>Shopping List Calculator</h1>
 	</header>
 	<main onload="render()">
 		<table id="table1">
 			<caption></caption>
 			<tr>
 				<th>Item Name</th>
-				<th>Quantity</th>
+<!-- 				<th>Quantity</th> -->
 				<th>Price</th>
-				<th>Total</th> 
+<!-- 				<th>Total</th>  -->
 			</tr>
 			<tr>
         <form id="myinputs">
           <td><input type="text" id="item-name-input" placeholder="Name"></td>
-          <td><input type="number" id="item-qty-input" placeholder="Qty"></td>
-          <td><input type="number" id="item-price-input" placeholder="Price"></td>
+<!--           <td><input type="number" min="1" id="item-qty-input" placeholder="Qty"></td> -->
+          <td><input type="number" min="1" id="item-price-input" placeholder="Price"></td>
         </form>
         <td><button id="add" onclick="addData();">Add</button></td>
       </tr>
     </table>
-    <div id="total">Total Ammount is 0 $</div>
+    <div id="total"><h3>Total Ammount is 0 $</h3></div>
   </main>
     	<script type="text/javascript" src="./script.js"></script>
 
