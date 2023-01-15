@@ -9,6 +9,19 @@ const addData = () => {
   let qtycell = newRow.insertCell(1);
   let pricecell = newRow.insertCell(2);
   let totalprice = newRow.insertCell(3);
+  if (qty <= 0 && price <= 0) {
+	  document.getElementById('item-qty-input').value = "";
+	  document.getElementById('item-price-input').value = "";
+	  return;
+  }
+  if (qty <= 0) {
+	  document.getElementById('item-qty-input').value = "";
+	  return;
+  }
+  if (price <= 0) {
+	  document.getElementById('item-price-input').value = "";
+	  return;
+  }
   namecell.classList.add("item");
   totalprice.classList.add("price");
   namecell.innerHTML = name;
