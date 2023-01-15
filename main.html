@@ -35,20 +35,20 @@
 				   <br />
 				   <tr >
                      <td ALIGN="center" colspan="2">
-					   <button onclick="event.preventDefault();add()" style="width:98%">Submit</button>
+					   <button id="add" onclick="event.preventDefault();add()" style="width:98%">Submit</button>
 					 </td>
 	               </tr>
 			   </table>
 			   <br />
 			   <table BORDER=5>
 		        	<tr id="entry">
-				    	<th><h2>Item Name</h2></th>
-			            <th><h2>Price</h2></th>
+				    	<th id=”item”><h2>Item Name</h2></th>
+			            <th id=”price”><h2>Price</h2></th>
 <!-- 						<th><h2>Quantity</h2></th> -->
 					</tr>
         
 		        	<tr>
-	            		<td ALIGN="center"><h3>Grand Total</h3></td>
+	            		<td id="total" ALIGN="center"><h3>Grand Total</h3></td>
 	            		<td ALIGN="center" id="total" >$ 0</td>
 <!-- 						<td ALIGN="center" id="totalquan" >0</td> -->
 		        	</tr>
