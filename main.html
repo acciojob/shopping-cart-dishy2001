@@ -8,52 +8,29 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<h1 id="heading">
+	<header id="heading">
 		Shopping List Calculator
-	</h1>
-    <br />
-		
-           <form id="myinputs">
-			   <table BORDER=5>
-				   <tr>
-                     <td ALIGN="center">
-		               <label>Name: </label>
-					 </td>
-					 <td ALIGN="center">
-		               <input type="text" id="item-name-input" placeholder="Name" style="width:96%" >
-		             </td>
-	               </tr>
-				   <br />
-				   <tr>
-                     <td ALIGN="center">
-					   <label>Price: </label>
-					 </td>
-					 <td ALIGN="center">
-		               <input type="number" id="item-price-input" placeholder="Price" style="width:96%">
-					 </td>
-	               </tr>
-				   <br />
-				   <tr >
-                     <td ALIGN="center" colspan="2">
-					   <button id="add" onclick="event.preventDefault();addItem()" style="width:98%">Submit</button>
-					 </td>
-	               </tr>
-			   </table>
-			   <br />
-			   <table BORDER=5>
-		        	<tr id="entry">
-				    	<th scope="col" id=”item”><h2>Item Name</h2></th>
-			            <th scope="col" id=”price”><h2>Price</h2></th>
-<!-- 						<th><h2>Quantity</h2></th> -->
-					</tr>
-        
-		        	<tr>
-	            		<th scope="row" id="total" ALIGN="center"><h3>Grand Total</h3></th>
-	            		<td ALIGN="center" id="total" >$ 0</td>
-<!-- 						<td ALIGN="center" id="totalquan" >0</td> -->
-		        	</tr>
-		       </table>
-		</form>
+	</header>
+	<main onload="render()">
+		<table id="table1">
+			<caption></caption>
+			<tr>
+				<th>Item Name</th>
+				<th>Quantity</th>
+				<th>Price</th>
+				<th>Total</th> 
+			</tr>
+			<tr>
+        <form id="myinputs">
+          <td><input type="text" id="item-name-input" placeholder="Name"></td>
+          <td><input type="text" id="item-qty-input" placeholder="Qty"></td>
+          <td><input type="text" id="item-price-input" placeholder="Price"></td>
+        </form>
+        <td><button id="add" onclick="addData();">Add</button></td>
+      </tr>
+    </table>
+    <div id="total">Total Ammount is 0 $</div>
+  </main>
     	<script type="text/javascript" src="./script.js"></script>
 
 </body>
